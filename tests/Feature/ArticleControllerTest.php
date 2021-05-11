@@ -16,7 +16,7 @@ public function testindex()
 {
   $response = $this->get(route('articles.index'));
 
-  $response->assertStatus(400)
+  $response->assertStatus(200)
   ->assertViewIs('articles.index');
 }
 
